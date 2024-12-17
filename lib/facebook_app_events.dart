@@ -45,6 +45,9 @@ class FacebookAppEvents {
   /// This could be an EAN, article identifier, etc., depending on the nature of the app.
   static const paramNameContentId = "fb_content_id";
 
+  /// ProductCatalogId
+  static const paramNameProductCatalogId = "product_catalog_id";
+
   /// Clears the current user data
   Future<void> clearUserData() {
     return _channel.invokeMethod<void>('clearUserData');
@@ -172,6 +175,7 @@ class FacebookAppEvents {
     String? type,
     String? currency,
     double? price,
+    String? productCatalogId,
   }) {
     return logEvent(
       name: eventNameViewedContent,
@@ -180,6 +184,7 @@ class FacebookAppEvents {
         paramNameContentId: id,
         paramNameContentType: type,
         paramNameCurrency: currency,
+        paramNameProductCatalogId: productCatalogId,
       },
       valueToSum: price,
     );
@@ -275,6 +280,7 @@ class FacebookAppEvents {
     String? contentId,
     int? numItems,
     bool paymentInfoAvailable = false,
+    String? productCatalogId,
   }) {
     return logEvent(
       name: eventNameInitiatedCheckout,
@@ -286,6 +292,7 @@ class FacebookAppEvents {
         paramNameCurrency: currency,
         paramNamePaymentInfoAvailable:
             paymentInfoAvailable ? paramValueYes : paramValueNo,
+        paramNameProductCatalogId: productCatalogId,
       },
     );
   }
