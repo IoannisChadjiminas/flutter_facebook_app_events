@@ -1,5 +1,32 @@
+## 0.19.5
+- Bump up android gradle version to `8.11.1`
+- Update gradle syntax to use declarative style
+- Update Facebook app events unit tests from using deprecated setMockMethodCallHandler method
+- Enhance widget tests to verify example app rendering and button text content
+
+## 0.19.4
+- Updating `FBAudienceNetwork`to version `6.16`
+- Updating iOS properties
+
+## 0.19.3
+- Bump up `FBSDKCoreKit` android gradle version to `17.0` to `18.0`
+- Update ios example minimum deployment target to `12.0`
+- Update target compile sdk in android gradle example to `34`
+
+## 0.19.2
+- Updating `FBSDKCoreKit` to `17.0` that include Privacy Manifest
+- Updating `FBAudienceNetwork` to `6.15`
+- Update iOS deployment target to `12.0`
+
+## 0.19.1
+- Updating `FBSDKCoreKit` to `16.1` (PR [#309](https://github.com/oddbit/flutter_facebook_app_events/pull/309))
+- Bump up android gradle version (PR [#310](https://github.com/oddbit/flutter_facebook_app_events/pull/310))
+- Handle open push notification issue (PR [#334](https://github.com/oddbit/flutter_facebook_app_events/pull/334))
+- Add compileOption and kotlinOption (PR [#321](https://github.com/oddbit/flutter_facebook_app_events/pull/321))
+
 ## 0.19.0
 - Updating `FBSDKCoreKit` to `16` (PR [#296](https://github.com/oddbit/flutter_facebook_app_events/pull/296))
+
 ## 0.18.3
 - Fixing issues [#270](https://github.com/oddbit/flutter_facebook_app_events/issues/270) and [#272](https://github.com/oddbit/flutter_facebook_app_events/issues/272)
 - Updating `FBSDKCoreKit` to `15.1`
